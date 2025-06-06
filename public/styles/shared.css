@@ -25,3 +25,28 @@ body {
 #main-header .nav-item {
   margin-left: 1rem; /* This spread the top 4 menu items apart by 1rem */
 }
+
+#product-listing {
+    display: flex;          /* make the 3 highlight pic display in row instead of column */
+    margin: auto;           /* kind of move those 3 pic a bit towards the center */
+    margin-bottom: 40px;    /* allow a bit of space under those 3 pic */
+    justify-content: center;    /* and this really centre those 3 pic */
+    list-style: none;
+}
+
+#product-listing img {
+    height: 500px;
+    width: 500px; 
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    object-fit: cover;      /* cover or fill no difference? */
+}
+
+#product-listing p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: rgb(124, 123, 123);
+    margin: 20px 0;
+}
+
