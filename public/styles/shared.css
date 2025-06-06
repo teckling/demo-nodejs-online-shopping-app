@@ -1,1 +1,27 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: rgb(250, 237, 208);
+  font-size: 1.5rem;
+}
 
+#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between; /* separate logo on left and menu items on right */
+  align-items: center; /* adjust center vertically */
+  background-color: rgb(228, 150, 77);
+  padding: 0 5%; /* move items away from left and right edge */
+  box-sizing: border-box; /* cannot see the effect */
+}
+
+#main-header ul {
+  margin: 0;
+  padding: 0;
+  display: flex; /* list the 4 menu items horizontally but the stick together */
+  list-style: none;
+}
+
+#main-header .nav-item {
+  margin-left: 1rem; /* This spread the top 4 menu items apart by 1rem */
+}
