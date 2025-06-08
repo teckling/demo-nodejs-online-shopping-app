@@ -9,7 +9,7 @@ body {
   height: 5rem;
   display: flex;
   justify-content: space-between; /* separate logo on left and menu items on right */
-  align-items: center; /* adjust center vertically */
+  align-items: center; /* adjust the vertical center of all elements inside header */
   background-color: rgb(228, 150, 77);
   padding: 0 5%; /* move items away from left and right edge */
   box-sizing: border-box; /* cannot see the effect */
@@ -26,27 +26,39 @@ body {
   margin-left: 1rem; /* This spread the top 4 menu items apart by 1rem */
 }
 
-#product-listing {
-    display: flex;          /* make the 3 highlight pic display in row instead of column */
+#product-listing-ul {
+    display: grid;          /* display product in a grid */
+    grid-template-columns: 1fr 1fr;      /* with 2 columns */
+    gap: 10px 10px;    /* gap between rows and columns */
     margin: auto;           /* kind of move those 3 pic a bit towards the center */
-    margin-bottom: 40px;    /* allow a bit of space under those 3 pic */
+    margin-top: 40px;    /* allow a bit of space at top of grid */
+    margin-bottom: 40px;    /* allow a bit of space under the grid */
     justify-content: center;    /* and this really centre those 3 pic */
     list-style: none;
 }
 
-#product-listing img {
-    height: 500px;
+#product-listing-ul img {
+    height: 350px;
     width: 500px; 
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 10px;
     object-fit: cover;      /* cover or fill no difference? */
 }
 
-#product-listing p {
-    text-align: center;
+#product-listing-ul p {
+    /* text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 24px; */
     color: rgb(124, 123, 123);
     margin: 20px 0;
+}
+
+.product-li {
+  display: flex;                /* img on left; text(div) on right*/
+  background-color: rgb(172, 154, 104);
+}
+
+.product-li div {
+  padding: 0 24px;            /* shift the text(div) slightly away from the img */
 }
 
