@@ -1,0 +1,39 @@
+main {                  /* no effect */
+  max-width: 50rem;
+}
+
+
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;          /* this used max-with 50rem above */
+}
+
+label {
+  color: rgb(80, 57, 7);      /* This is a good dark grey less harsh than black */
+  margin-bottom: 0.25rem;       /* keep label and text input slightly apart */
+}
+
+input,
+textarea {
+  font: inherit;                /* this inherit 1.5rem taller font from shared.css */
+  padding: 0.25rem;             /* pad some space above and below the input text */
+  border-radius: 4px;
+  background-color: rgb(252, 248, 239);     /* make it not so white */
+  border: 1px solid rgb(121, 85, 7);
+  color: rgb(121, 85, 7);       /* color of input text kind of light brown */
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  font: inherit;                /* this inherit 1.5rem taller font from shared.css */
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(189, 130, 41);
+  border-radius: 4px;
+  color: white;
+  border: 1px solid rgb(202, 158, 62);
+}
